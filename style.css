@@ -33,7 +33,7 @@ section {
 }
 
 footer {
-    background-color: #eee;
+    background: linear-gradient(to right, #444444, #686868, #959595, #686868, #444444);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
