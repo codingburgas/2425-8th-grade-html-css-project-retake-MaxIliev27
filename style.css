@@ -38,3 +38,39 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+.menu-item {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 200px;
+  height: auto;
+  object-fit: cover; 
+}
+
+.menu-details {
+  padding: 15px;
+  flex: 1;
+}
+
+.menu-details h4 {
+  font-size: 1.4em;
+  color: #dadada;
+  margin: 0 0 10px;
+}
+
+.menu-details p {
+  margin: 5px 0;
+  color: #efefef;
+}
+
+.menu-details .price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f3ffbe;
+  margin-top: 10px;
+}
