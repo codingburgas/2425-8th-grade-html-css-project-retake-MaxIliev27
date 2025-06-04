@@ -27,56 +27,78 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
-section {
-    padding: 20px;
-}
-
 footer {
     background: linear-gradient(to right, #444444, #686868, #959595, #686868, #444444);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
 }
-.menu-item {
-  display: flex;
+.registration-form {
+  background: linear-gradient(to right, #444444, #686868, #959595, #686868, #444444);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-form:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.registration-form h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.registration-form label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 12px;
   margin-bottom: 20px;
-  background-color: #000;
-  border-radius: 10px;
-  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
 }
 
-.menu-item img {
-  width: 200px;
-  height: auto;
-  object-fit: cover; 
-}
 
-.menu-details {
-  padding: 15px;
-  flex: 1;
-}
-
-.menu-details h4 {
-  font-size: 1.4em;
-  color: #dadada;
-  margin: 0 0 10px;
-}
-
-.menu-details p {
-  margin: 5px 0;
-  color: #efefef;
-}
-
-.menu-details .price {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #f3ffbe;
-  margin-top: 10px;
-}
-h3 {
+.registration-form button {
+  width: 105%;
+  padding: 12px;
+  justify-content: center;
+  background-color: #d2bc14;
   color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-h2 {
-  color: white;
+
+.registration-form button:hover {
+  background-color: #877a12;
+  transform: translateY(-2px);
+}
+
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  resize: none;
 }
