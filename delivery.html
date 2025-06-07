@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu – Main Courses</title>
+    <title>Delivery Information</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
 </head>
 <body>
     <header>
@@ -27,27 +25,19 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="delivery.html" class="active">Delivery</a></li>
             <li><a href="booking.html">Book a table</a></li>
             <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
 
-
     <main>
-        <form class="registration-form" method="post">
-        <h2>Contact Us</h2>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <h2 class="section-title">Delivery Information</h2>
+        <p>We deliver every day between <strong>11:00 and 18:00</strong>. Orders can be made by phone at <strong>056 123 456</strong>.</p>
+        <p>Delivery is <strong>free</strong> in the following neighbourhoods: Center, Lazur, Zornitsa, Izgrev, Slaveykov.</p>
+        <p>For Sarafovo, Kraimorie and Meden Rudnik, a <strong>delivery fee of 5.00 BGN</strong> applies.</p>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="password">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
-
-        <button type="submit">Send</button>
-    </form>
+        <img src="images/deliverymap.jpg" alt="Delivery Area Map" style="width:100%; max-width:1000px; height:auto; margin-top:20px;" />
     </main>
 
     <footer>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            <h1>Simple: Food and Friends</h1>
+        </div>
+        <form class="login-form">
+            <input type="text" placeholder="Username" name="username" />
+            <input type="password" placeholder="Password" name="password" />
+            <button type="submit">Login</button>
+            <a href="#">Forgot password?</a> |
+            <a href="#">Register</a>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="booking.html" class="active">Book a table</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="section-title">Book a Table</h2>
+        <p>You can book a table quickly and easily by filling out the form below.</p>
+        <p>We also accept reservations by phone at <strong>056 123 456</strong>.</p>
+        <p><br><em>Please note: Reservations are valid only after confirmation. We will call you back to confirm.</em><br><br></p>
+
+        <form class="contact-form" style="max-width: 600px;">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="email" name="email" placeholder="Email (optional)" />
+
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" required />
+
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" required />
+
+            <label for="people">Number of Guests:</label>
+            <select name="people" id="people" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <textarea name="notes" placeholder="Notes (optional)"></textarea>
+            <button type="submit">Send Reservation</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-left">&copy; Simple: Food and Friends</div>
+        <div class="footer-right">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Contact us</a>
+        </div>
+    </footer>
+</body>
+</html>

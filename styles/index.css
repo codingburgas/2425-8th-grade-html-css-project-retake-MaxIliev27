@@ -1,0 +1,14 @@
+.daily-specials {
+    margin-top: 20px;
+}
+
+.specials-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.special-item {
+    flex: 1 1 45%;
+    text-align: center;
+}

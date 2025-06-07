@@ -1,0 +1,85 @@
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Вторична навигация (категории) */
+.menu-subnav {
+    background-color: #dab38d;
+    padding: 10px 0;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.menu-subnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-subnav a {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #6b2e13;
+    font-weight: bold;
+}
+
+.menu-subnav a.active,
+.menu-subnav a:hover {
+    background-color: #a35426;
+    color: white;
+    border-radius: 4px;
+}
+
+.menu-subnav,
+.menu-list {
+    width: 100%;
+}
+
+
+/* Списък с ястия */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #e0d0b0;
+    padding-bottom: 10px;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.menu-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.menu-price {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a35426;
+}

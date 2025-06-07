@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple: Food and Friends</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu – Main Courses</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-    <div class="wrapper">
-      <header>
-          <h1>Simple: Food and Friends</h1>
-          <nav>
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="menu.html">Menu</a></li>
-                  <li><a href="ordered.html">Your Orders</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-          </nav>
-      </header>
-      <section>
-          <h2>Welcome to Restaurant Simple!</h2>
-          <h3>You can find healthy food with low calories, but also delicious.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id elit varius, blandit sem sit amet, aliquam ipsum. Curabitur imperdiet justo viverra arcu tincidunt ultricies. Proin elit libero, fermentum id placerat sit amet, vestibulum ut eros. Nam iaculis pharetra dignissim. Curabitur hendrerit quam non orci suscipit cursus. Quisque imperdiet nibh velit, a porta eros elementum non. Quisque laoreet mattis quam, ac ornare lorem faucibus id.</p>
-      </section>
-      <footer>
-          <p>&copy; 2025 Restaurant Simple!</p>
-      </footer>
-    </div>
+    <header>
+        <div class="logo-area">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            <h1>Simple: Food and Friends</h1>
+        </div>
+        <form class="login-form">
+            <input type="text" placeholder="Username" name="username" />
+            <input type="password" placeholder="Password" name="password" />
+            <button type="submit">Login</button>
+            <a href="#">Forgot password?</a> |
+            <a href="#">Register</a>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="booking.html">Book a table</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="home">
+            <h2>Welcome to our restaurant</h2>
+            <p>Experience healthy and delicious meals prepared with organic ingredients. Our mission is to serve nutritious food without compromising on taste.</p>
+            <p>We cater to various dietary needs including vegetarian, vegan, and gluten-free options.</p>
+
+            <div class="daily-specials">
+                <h3 class="section-title">Daily Specials</h3>
+                <div class="specials-grid">
+                    <div class="special-item">
+                        <img src="images/daily-special-1.jpg" alt="Daily Special 1">
+                        <h4>Quinoa Salad</h4>
+                        <p>Fresh vegetables and lemon dressing</p>
+                    </div>
+                    <div class="special-item">
+                        <img src="images/daily-special-2.jpg" alt="Daily Special 2">
+                        <h4>Stuffed Peppers</h4>
+                        <p>Vegan cheese and herbs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h3 class="section-title">Visit Us</h3>
+            <p>123 Green Avenue, Burgas</p>
+            <p>Phone: +359 56 123 456</p>
+            <img src="images/map.jpg" alt="Our location on the map">
+        </section>
+
+        <section id="contact">
+            <h3 class="section-title">Send us a message</h3>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">&copy; Simple: Food and Friends</div>
+        <div class="footer-right">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Contact us</a>
+        </div>
+    </footer>
 </body>
 </html>
