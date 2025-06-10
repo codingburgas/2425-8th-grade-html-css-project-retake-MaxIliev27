@@ -1,3 +1,6 @@
+*body{
+  align-items: center;
+}
 .registration-form {
   background: #ffffff;
   padding: 40px;
